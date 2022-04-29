@@ -13,7 +13,9 @@
   </head>
   <%= render 'shared/navbar' %>
   <body>
-    <%= render 'shared/flash' %>
+    <div class="container p-8 flex justify-center">
+      <%= render 'shared/flash' %>
+    </div>
     <main class="container mx-auto mt-28 p-8 flex">
       <%= yield %>
     </main>
