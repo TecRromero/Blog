@@ -3,12 +3,10 @@
     <strong class="block font-medium mb-1">User:</strong>
     <%= column.user_id %>
   </p>
-
   <p class="my-5">
-    <strong class="block font-medium mb-1">Body:</strong>
+    <strong class="block font-medium mb-1">Blog:</strong>
     <%= column.body %>
   </p>
-
   <% if action_name != "show" %>
     <%= link_to "Show this column", column, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <%= link_to 'Edit this column', edit_column_path(column), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
