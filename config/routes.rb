@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :columns
+  resources :comments
+  resources :posts
   devise_for :users
   get 'home', to: 'home#index'
   root 'public#index'
