@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :comments
   resources :posts
   devise_for :users
+  get 'blog', to: 'posts#index'
   get 'home', to: 'home#index'
   root 'public#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
