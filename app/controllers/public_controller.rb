@@ -3,7 +3,7 @@
 class PublicController < ApplicationController
   skip_before_action :authenticate_user!
 
-  def index; 
+  def index
     @posts = Post.all
   end
 end
